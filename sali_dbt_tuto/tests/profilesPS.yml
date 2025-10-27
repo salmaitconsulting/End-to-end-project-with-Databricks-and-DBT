@@ -1,0 +1,11 @@
+sali_dbt_tuto:
+  outputs:
+    dev:
+      catalog: dbt_tutorial
+      host: dbc-32494a07-65b1.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/7cc4dfbcd840d905
+      schema: default
+      threads: 1
+      token: dapi1852e40db1e76a233e4cc2ea4543179c
+      type: databricks
+  target: dev
