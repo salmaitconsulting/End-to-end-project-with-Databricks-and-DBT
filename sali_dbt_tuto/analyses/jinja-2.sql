@@ -1,4 +1,13 @@
 {%-   set apples = [ "orange" , "kiwi" , "gala" , "fuji" , "honey"]   -%}
+
 {%  for i in apples %}
-     {{ i }}
+
+   {%  if i in "kiwi" %}
+         {{ i }}
+
+   {% else %}
+         i hate {{ i }}
+
+   {% endif %} 
+
 {% endfor %} 
