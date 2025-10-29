@@ -8,3 +8,34 @@ wheels/
 
 # Virtual environments
 .venv
+
+# 🔒 SECURITY: Add these new lines below 👇
+
+# Environment variables & secrets
+.env
+.env.local
+.env.production
+*.env
+
+# DBT profiles with credentials
+profiles.yml
+*profiles*.yml
+
+# Configuration files that may contain secrets
+*config*.yml
+*config*.yaml
+*secret*
+*password*
+*token*
+*key*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# DBT specific
+/target/
+/logs/
+/dbt_packages/
