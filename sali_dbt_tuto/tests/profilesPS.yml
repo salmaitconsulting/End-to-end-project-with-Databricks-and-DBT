@@ -1,11 +1,11 @@
 sali_dbt_tuto:
   outputs:
     dev:
-      catalog: dbt_tutorial
-      host: dbc-32494a07-65b1.cloud.databricks.com
-      http_path: /sql/1.0/warehouses/7cc4dfbcd840d905
-      schema: default
+      catalog: "{{ env_var('DATABRICKS_CATALOG') }}"
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"
+      schema: "{{ env_var('DATABRICKS_SCHEMA') }}"
       threads: 1
-      token: dapi04e3e844aabbfeaecf265d5a04042772
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
   target: dev
