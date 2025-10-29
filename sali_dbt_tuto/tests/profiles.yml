@@ -8,5 +8,5 @@ sali_dbt_tuto:
       threads: 1
       token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
-  target: dev
+  target: dev 
 
