@@ -6,7 +6,7 @@ sali_dbt_tuto:
       http_path: /sql/1.0/warehouses/7cc4dfbcd840d905
       schema: default
       threads: 1
-      token: dapi1852e40db1e76a233e4cc2ea4543179c
+      token: dapi04e3e844aabbfeaecf265d5a04042772
       type: databricks
   target: dev
 
