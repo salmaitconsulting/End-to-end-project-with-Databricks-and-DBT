@@ -9,3 +9,4 @@ sali_dbt_tuto:
       token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
   target: dev
+ 
