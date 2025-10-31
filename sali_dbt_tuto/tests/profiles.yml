@@ -1,5 +1,6 @@
 sali_dbt_tuto:
-  outputs:
+  target: dev
+  outputs: 
     dev:
       catalog: "{{ env_var('DATABRICKS_CATALOG') }}"
       host: "{{ env_var('DATABRICKS_HOST') }}"
@@ -8,5 +9,14 @@ sali_dbt_tuto:
       threads: 1
       token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
-  target: dev 
+    prod:
+      catalog: "{{ env_var('DATABRICKS_CATALOG') }}"
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"
+      schema: "{{ env_var('DATABRICKS_SCHEMA') }}"
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
+
+
 

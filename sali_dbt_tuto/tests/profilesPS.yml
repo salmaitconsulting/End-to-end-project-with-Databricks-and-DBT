@@ -8,5 +8,14 @@ sali_dbt_tuto:
       threads: 1
       token: "{{ env_var('DATABRICKS_TOKEN') }}"
       type: databricks
+
+    prod:
+      catalog: "{{ env_var('DATABRICKS_CATALOG') }}"
+      host: "{{ env_var('DATABRICKS_HOST') }}"
+      http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"
+      schema: "{{ env_var('DATABRICKS_SCHEMA') }}"
+      threads: 1
+      token: "{{ env_var('DATABRICKS_TOKEN') }}"
+      type: databricks
   target: dev
  
