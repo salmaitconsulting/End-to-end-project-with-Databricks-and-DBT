@@ -79,3 +79,41 @@ Product return data for quality and satisfaction analysis.
 
     Medallion Architecture: Scalable data design pattern
 
+**🛠️ Project Structure**
+    sall_dbt_tuto/
+├── analyses/                    # Analytical queries & exploration
+│   ├── 1-explore.sql           # Initial data exploration
+│   ├── jinja-2.sql             # Jinja templating examples
+│   ├── jinja-3.sql             # Advanced Jinja templates
+│   ├── query_macro.sql         # Macro-based queries
+│   └── target_variable.sql     # Environment-specific variables
+├── dbt_packages/               # dbt dependencies
+├── logs/                       # Execution logs
+├── macros/                     # Reusable SQL macros
+├── models/                     # Data models organized by medallion layers
+│   ├── bronze/                 # Bronze Layer: Raw data ingestion
+│   ├── silver/                 # Silver Layer: Cleaned & validated data
+│   ├── gold/                   # Gold Layer: Business-ready dimensions & facts
+│   └── sources.yml             # Source configuration
+├── seeds/                      # Reference data files
+├── snapshots/                  # Data snapshot configurations
+├── target/                     # Compiled artifacts
+├── tests/                      # Data quality tests
+├── .gitignore                  # Git ignore rules
+├── dbt_project.yml             # Project configuration
+├── README.md                   # Project documentation
+├── .env                        # Environment variables
+└── .python-version             # Python version specification
+
+**🚀 Getting Started**
+*Prerequisites*
+
+    Python 3.8+
+
+    dbt Core
+
+    Databricks account
+
+    Git
+
+
