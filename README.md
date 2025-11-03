@@ -69,7 +69,7 @@ Product return data for quality and satisfaction analysis.
 
     
 
-*🛠️ Technology Stack*
+**🛠️ Technology Stack**
 
     dbt: Data transformation and modeling
 
@@ -78,3 +78,4 @@ Product return data for quality and satisfaction analysis.
     Git: Version control and collaboration
 
     Medallion Architecture: Scalable data design pattern
+
