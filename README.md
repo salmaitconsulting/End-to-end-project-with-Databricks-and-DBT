@@ -80,11 +80,12 @@ Product return data for quality and satisfaction analysis.
     Medallion Architecture: Scalable data design pattern
 
 **🛠️ Project Structure**
-    sall_dbt_tuto/
+
+```markdown
+
+project_dbt   
 ├── analyses/                    # Analytical queries & exploration
 │   ├── 1-explore.sql           # Initial data exploration
-│   ├── jinja-2.sql             # Jinja templating examples
-│   ├── jinja-3.sql             # Advanced Jinja templates
 │   ├── query_macro.sql         # Macro-based queries
 │   └── target_variable.sql     # Environment-specific variables
 ├── dbt_packages/               # dbt dependencies
@@ -103,7 +104,12 @@ Product return data for quality and satisfaction analysis.
 ├── dbt_project.yml             # Project configuration
 ├── README.md                   # Project documentation
 ├── .env                        # Environment variables
+
 └── .python-version             # Python version specification
+├── requirements.txt
+├── README.md
+
+```
 
 **🚀 Getting Started**
 *Prerequisites*
@@ -115,5 +121,6 @@ Product return data for quality and satisfaction analysis.
     Databricks account
 
     Git
+
 
 
